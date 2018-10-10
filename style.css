@@ -6,9 +6,17 @@ body{
     
 }
 
-button {
+.actions {
     position: fixed;
     bottom: 0;
     left: 0;
-    color: black;
+}
+.actions > #brush {
+    display: none;
+}
+.actions.x > #brush {
+    display: inline-block;
+}
+.actions.x > #eraser{
+    display: none;
 }

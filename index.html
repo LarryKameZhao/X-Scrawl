@@ -11,7 +11,11 @@
     <canvas id="canvas" width=300 height=400>
         
     </canvas>
-    <button id="eraser">橡皮擦</button>
+    <div id="actions" class="actions ">
+        <button id="eraser">橡皮擦</button>
+        <button id="brush">画笔</button>
+    </div>
+    
     <script>
         let canvas = document.getElementById('canvas')
         let context = canvas.getContext('2d')
@@ -79,7 +83,12 @@
         let usingEraser = false
         let eraser = document.getElementById('eraser')
         eraser.onclick = function () {
-            usingEraser = !usingEraser
+            usingEraser = true
+            actions.className = 'actions x'
+        }
+        brush.onclick = function () {
+            usingEraser = false
+            actions.className = 'actions'
         }
         
     </script>
