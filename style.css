@@ -18,7 +18,8 @@ body{
  }
 #canvas{
     
-    
+    display: block;
+    background: white;
 }
 
 .actions {
@@ -62,7 +63,37 @@ body{
 .colors > li.blue{
     background:blue;
 }
+.colors > li.black{
+    background: black;
+}
 .colors > li.active {
+    box-shadow: 0 0 3px rgba(0,0,0,.95);
+    transform: scale(1.2);
+}
+.sizes {
+    position:fixed;
+    right: 10px;
+    top:50px;
+}
+.sizes > li {
+    margin: 20px;
+}
+.sizes > .thin {
+    height: 0;
+    width: 50px;
+    border-top:3px solid black;
+}
+.sizes > .medium {
+    height: 0;
+    width: 50px;
+    border-top:6px solid black;
+}
+.sizes > .thick {
+    height: 0;
+    width: 50px;
+    border-top: 9px solid black;
+}
+.sizes >li.active {
     box-shadow: 0 0 3px rgba(0,0,0,.95);
     transform: scale(1.2);
 }
