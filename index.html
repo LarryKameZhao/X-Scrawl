@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
     <title>X-Scrawl</title>
     <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_868896_ldly4ke1lp.js
+    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -12,10 +15,18 @@
         
     </canvas>
     <div id="actions" class="actions ">
-        <button id="eraser">橡皮擦</button>
-        <button id="brush">画笔</button>
+        <svg class="icon active" id="pencil">
+            <use xlink:href="#icon-pencil"></use>
+        </svg>
+        <svg class="icon" id="eraser" >
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
     </div>
-    
+    <ol class="colors">
+        <li id=red class="red active"></li>
+        <li id=green class="green"></li>
+        <li id=blue class="blue"></li>
+    </ol>
     <script src="./main.js">
        
     </script>

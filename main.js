@@ -102,9 +102,27 @@ let usingEraser = false
 let eraser = document.getElementById('eraser')
 eraser.onclick = function () {
     usingEraser = true
-    actions.className = 'actions x'
+    eraser.classList.add('active')
+    $(this).siblings().removeClass('active')
 }
-brush.onclick = function () {
+pencil.onclick = function () {
     usingEraser = false
-    actions.className = 'actions'
+    pencil.classList.add('active')
+    $(this).siblings().removeClass('active')
+}
+
+red.onclick = function () {
+    red.classList.add('active')
+    context.strokeStyle = 'red'
+    $(this).siblings().removeClass('active')
+}
+green.onclick = function () {
+    green.classList.add('active')
+    context.strokeStyle = 'green' 
+    $(this).siblings().removeClass('active')
+}
+blue.onclick = function () {
+    blue.classList.add('active')
+    context.strokeStyle = 'blue'
+    $(this).siblings().removeClass('active')
 }
