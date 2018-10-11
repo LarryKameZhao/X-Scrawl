@@ -1,6 +1,6 @@
 let canvas = document.getElementById('canvas')
 let context = canvas.getContext('2d')
-let lineWidth = 5
+let lineWidth = 3
 setCanvasSize(canvas)
 listenToUser(canvas)
 function drawCircle(x, y, radius) {
@@ -138,7 +138,7 @@ save.onclick = function () {
     console.log(canvasToImage('white'))
     let a = document.createElement('a')
     $('body').append(a)
-    a.href = url1
+    a.href = url
     a.download = '我的涂鸦'
     a.target = '_blank'
     a.click()
