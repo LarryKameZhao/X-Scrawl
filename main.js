@@ -38,7 +38,7 @@ function listenToUser(canvas) {
     if (document.body.ontouchstart !== undefined) {
         canvas.ontouchstart = function (a) {
             let x = a.touches[0].clientX
-            let y = a.touched[0].clientY
+            let y = a.touches[0].clientY
             painting = true
             if (usingEraser) {
                 context.clearRect(x - 5, y - 5, 10, 10)
