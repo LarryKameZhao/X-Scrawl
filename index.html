@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="//at.alicdn.com/t/font_868896_jeh7mr5szwc.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
 </head>
 <body>
 
@@ -38,6 +39,11 @@
         <li class="medium" id=medium></li>
         <li class="thick" id=thick></li>
     </ol>
+    <script>
+         $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
     <script src="./main.js"> </script>
 </body>
 </html>
