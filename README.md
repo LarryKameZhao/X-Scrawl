@@ -1,6 +1,8 @@
 ## X-Scrawl涂鸦
 ### [预览链接](https://larrykamezhao.github.io/X-Scrawl/)
 
+### ![移动端扫码](https://article111.oss-cn-beijing.aliyuncs.com/QR-CODE/x%E7%94%BB%E6%9D%BF.png)
+
 ![项目截图](https://music164.oss-cn-hangzhou.aliyuncs.com/markdown/QQ%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%9B%BE20181023120034.png)
 
 关键词： JQuery, canvas, html5
